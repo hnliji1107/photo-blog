@@ -1,0 +1,96 @@
+.state{
+	font-size:12px;
+	font-family:'微软雅黑';
+	color:#666;
+	font-weight:normal;
+}
+#sonNav{
+	margin-top:5px;
+}
+.myPhoto{
+	float:left;
+	width:240px;
+	margin-bottom:15px;
+	margin-right:80px;
+}
+.photoName{
+	width:240px;
+	height:auto;
+	overflow:hidden;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	font-family:'微软雅黑';
+	word-wrap:break-word;
+	margin-bottom:5px;
+}
+.setName, .newDesc{
+	border:1px solid #ccc;
+	background-color:#eee;
+	width:234px;
+	padding:3px;
+	font-size:12px;
+	color:#454545;
+	margin-bottom:5px;
+}
+a.save, span.also, a.delBtn{
+	width:40px;
+	padding:3px 5px;
+	float:left;
+	margin:0 5px 5px 0;
+}
+.span.also, a.delBtn{
+	display:inline-block;
+}
+.displayImg{
+	*margin-top:5px;
+}
+.descDisplay{
+	font-size:13px;
+	color:#666;
+	margin-top:5px;
+}
+.newDesc{
+	height:100px;
+	overflow:hidden;
+}
+.dateTime{
+	margin-top:5px;
+	font-size:12px;
+	color:#666;
+}
+.deleteBtn{
+	font-size:12px;
+}
+.albumList{
+	width:280px;
+	background-color:#eee;
+}
+.album li{
+	padding:20px 0 20px 20px;
+	width:240px;
+}
+.albumCover, .albumSet{
+	float:left;
+}
+.albumCover{
+	width:107px;
+	height:107px;
+	overflow:hidden;
+	background:url(../images/set_case.png) no-repeat;
+}
+.albumCover a{
+	display:block;
+	width:75px;
+	height:75px;
+	overflow:hidden;
+	margin:16px;
+}
+.albumSet{
+	margin-left:10px;
+	width:120px;
+}
+.photoNum{
+	font-size:12px;
+	color:#999;
+}

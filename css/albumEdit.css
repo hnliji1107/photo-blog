@@ -1,0 +1,38 @@
+.albumPhotos{
+	margin-top:10px;
+}
+.albumPhotos li{
+	float:left;
+	margin-right:5px;
+	display:inline;
+}
+.albumPhotos li.photoNum{
+	width:200px;
+	margin-top:5px;
+	font-size:12px;
+}
+.albumPhotos li a img{
+	display:block;
+}
+
+.editArea li span{
+	font-size:12px;
+}
+.goBack{
+	margin-top:20px;
+}
+.goBack a, .goBack a:hover{
+	color:#6B9F1F;;
+}
+.save{
+	width:50px;
+}
+.albumEdit h2{
+	width:240px;
+}
+.albumEdit .albumPhotos{
+	width:240px;
+}
+.albumEdit .albumPhotos li{
+	margin-bottom:5px;
+}

@@ -1,0 +1,150 @@
+/****====左侧栏====****/
+.mood{
+	border:1px solid #ccc;
+	width:645px;
+	padding:3px 5px;
+	height:30px;
+	border-radius:5px 5px;
+	font-size:12px;
+	color:#666;
+}
+.sonNav{
+	border-bottom:1px solid #C9E3A3;
+	margin-top:20px;
+	padding:0 15px;
+}
+.xTabs li{
+	float:left;
+	margin-right:10px;
+	display:inline;
+}
+.xTabs li a{
+	display:block;
+	padding:3px 10px;
+	border:1px solid #C9E3A3;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom:none;
+	font-size:13px;
+	background-color:#EBF8D8;
+}
+.xTabs li a:hover{
+	text-decoration:none;
+}
+.xTabs li a.current{
+	background-color:#fff;
+	font-weight:bold;
+	border-bottom:1px solid #fff;
+	margin-bottom:-1px;
+}
+.Dynamic{
+	margin-top:30px;
+	width:660px;
+}
+li.details{
+	border-bottom:1px solid #eee;
+	padding:10px 5px;
+	width:660px;
+}
+.details{
+	height:auto;
+}
+.ownerIco, .ownerDynamic{
+	float:left;
+	margin-right:0;
+}
+.ownerDynamic{
+	width:590px;
+	font-size:12px;
+	color:#666;
+}
+.ownerIco{
+	margin:0 10px;
+}
+.otherInfo{
+	float:left;
+
+}
+.date{
+	float:right;
+}
+.photos, .contracts{
+	margin-top:10px;
+	width:590px;
+	height:75px;
+	overflow:hidden;
+}
+.photos li, .contracts li{
+	float:right;
+	margin-left:10px;
+	display:inline;
+}
+/****====右侧栏====****/
+.right{
+	padding-left:15px;
+	width:280px;
+}
+.Ico, .ownerInformation{
+	float:left;
+}
+.ownerInformation{
+	display:inline;
+	margin-left:5px;
+	width:200px;
+}
+.ownerNav li{
+	float:left;
+	font-size:12px;
+	padding:0 5px;
+	border-right:1px dotted #ccc;
+}
+.clearBottom{
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#000;
+}
+.quickColunm{
+	margin-top:60px;
+}
+.quickColunm li{
+	float:left;
+	margin-left:15px;
+	display:inline;
+	width:114px;
+	
+}
+.quickColunm li a{
+	display:block;
+	padding:10px 20px;	
+	height:30px;
+	line-height:30px;
+	background-color:#ddd;
+	border:1px solid #ccc;
+	font-size:18px;
+	border-radius:8px 8px;
+}
+.userList{
+	padding-right:15px;
+	width:645px;
+}
+.userList li{
+	float:left;
+	margin-left:10px;
+	margin-top:15px;
+	display:inline;
+}
+.addFrBtn{
+	width:82px;
+}
+.addFrBtn .btn{
+	padding-left:0;
+	padding-right:0;
+	width:80px;
+	height:18px;
+	line-height:18px;
+}
+.uname{
+	width:82px;
+	text-align:center;
+	margin-top:5px;
+}

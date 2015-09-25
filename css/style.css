@@ -1,0 +1,589 @@
+@charset "utf-8";
+
+/*页面元素初始化*/
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */{
+border:medium none;
+margin: 0;
+padding: 0;
+}
+/** 设置默认字体 **/
+body,button, input, select, textarea {
+font: 14px/1.5 sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em,i{font-style:normal;}
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#6B9F1F; font-size:13px;}
+a:hover { text-decoration: underline; color:#6B9F1F; }
+/** 重置图片元素 **/
+img{ border:0px;}
+/**清除浮动**/
+.clearfix:after {
+	content: "";
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	display: block;
+}
+/*这是对Firefox进行的处理，因为Firefox支持生成元素，而IE所有版本都不支持生成元素*/
+.clearfix {
+	display: inline-block;   
+}              
+/* 这是对 Mac 上的IE浏览器进行的处理 */
+* html .clearfix {height: 1%;}      
+/* 这是对 win 上的IE浏览器进行的处理 */
+.clearfix {display: block;}      
+/* 这是对display: inline-block;进行的修改，重置为区块元素*/ 
+
+#content{
+	width:960px;
+	min-height:600px;
+	padding:10px 20px 50px 20px;
+	margin:0 auto;
+}
+.blockNav{
+	width:960px;
+	margin:0 auto;
+}
+#wrapper{
+	width:960px;
+}
+#titleName{
+	font-family:"微软雅黑";
+	font-size:24px;
+	color:#000;
+	margin-bottom:10px;
+}
+
+/****========Start页面布局样式========****/
+.f_l, .f_r{
+	float:left;
+	color:#444;
+}
+.f_l{
+	width:300px;
+}
+.f_r{
+	width:660px;
+}
+.block{
+	width:960px;
+}
+/****========End页面布局样式========****/
+
+h2{
+	font-size:14px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	margin-bottom:10px;
+}
+h2.public{
+	margin-top:20px;
+}
+h2 a, h2.public a:hover{
+	color:#6B9F1F;
+}
+h2.public a{
+	font-size:18px;
+	font-family:"微软雅黑";
+}
+a img{
+	display:block;
+}
+
+/****========Start头部样式=======****/
+#header{
+	border-bottom:1px solid #ccc;
+	-moz-box-shadow:4px 4px 2px #eee;
+	-webkit-box-shadow:4px 4px 2px #eee;
+	box-shadow:4px 4px 2px #eee;
+}
+#nav{
+	position:relative;
+	width:500px;
+	margin:0 auto;
+	padding:5px 20px 0 20px;
+	float:left;
+}
+#nav li, .loginTip li{
+	float:left;
+}
+#nav li a, .loginTip li a{
+	display:block;
+	font-size:18px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	padding:10px 15px;
+}
+.loginTip{
+	float:right;
+	width:330px;
+	padding-left:70px;
+	display:inline;
+	height:49px;
+}
+.loginTip li{
+	height:47px;
+	display:inline-block;
+}
+li.spacing{
+	margin-left:180px;
+}
+li.exit{
+	width:66px;
+}
+.loginOut a{
+	text-decoration:none;
+}
+.aboutMe{
+	position:relative;
+}
+#menu{
+	padding-left:0 !important;
+	padding-right:20px;
+	margin-left:10px;
+}
+.tipIco{
+	position:absolute;
+	right:-5px;
+	top:0;
+	display:block;
+	height:47px;
+	width:20px;
+	cursor:pointer;
+}
+.tipIco{
+	background:url(../images/bg-header-menu-drop.png) no-repeat -168px center;
+}
+
+.son{
+	width:110px;
+	padding:5px 10px;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	-moz-box-shadow:4px 4px 2px #eee;
+	-webkit-box-shadow:4px 4px 2px #eee;
+	box-shadow:4px 4px 2px #eee;
+	position:absolute;
+	top:47px;
+	left:15px;
+	background:#fff;
+	display:none;
+	z-index:999;
+}
+.son li{
+	float:none !important;
+}
+.son li a{
+	display:block !important;
+	font-size:13px !important;
+	font-family:"微软雅黑" !important;
+	padding:5px 10px !important;
+}
+
+/****========End头部样式=======****/
+
+/****========Start尾部样式=======****/
+#footer{
+	background:url(../images/bg-bottom.png) repeat;
+	padding:20px 0;
+}
+/****========End尾部样式=======****/
+#bottom{
+	width:960px;
+	padding:0 20px;
+	margin:0 auto;
+}
+#bottom fieldset{
+	border:1px solid #6B9F1F;
+	padding:15px;
+	height:40px;
+}
+#bottom fieldset legend{
+	width:190px;
+}
+#bottom fieldset legend a, #bottom fieldset legend span{
+	display:block;
+	float:left;
+	font-size:13px;
+	color:#6B9F1F;
+}
+#bottom fieldset legend a{
+	margin:0 5px;
+	display:inline;
+}
+.friendLink li{
+	float:left;
+	margin-right:10px;
+}
+.friendLink li a{
+	display:block;
+	padding:5px 10px;
+	color:#fff;
+}
+.friendLink li a:hover{
+	color:#fff;
+}
+
+/****========Start编辑相册和创建相册区域的公共样式=======****/
+.editArea li{
+	margin-bottom:10px;
+}
+.editArea label{
+	display:block;
+	font-size:14px;
+}
+#title,#albumDescription{
+	width:400px;
+	padding:5px 5px;
+	border:1px solid #ccc;
+	border-radius:5px 5px;
+	font-size:12px;
+	color:#000;
+	-moz-box-shadow:2px 2px 3px #ccc;
+	-webkit-box-shadow:2px 2px 3px #ccc;
+	box-shadow:2px 2px 3px #ccc;
+	margin-bottom:10px;
+}
+#albumDescription{
+	height:200px;
+	overflow:hidden;
+}
+/****========End编辑相册区域和创建相册区域的公共样式========****/
+
+a.btn{
+	display:block;
+	padding:6px 10px;
+	border:1px solid #6B9F1F;
+	border-radius:5px 5px;
+	background-color:#6B9F1F;
+	text-align:center;
+	font-size:14px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#fff;
+}
+a.btn:hover{
+	background-color:#436b0c;
+	color:#fff;
+	text-decoration:none;
+}
+input.btn{
+	display:block;
+	padding:6px 10px;
+	border:1px solid #6B9F1F;
+	border-radius:5px 5px;
+	background-color:#6B9F1F;
+	text-align:center;
+	font-size:14px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#fff;
+}
+.goBack{
+	font-size:12px;
+	color:#444;
+	margin-top:20px;
+}
+.goBack a, .goBack a:hover{
+	color:#6B9F1F;;
+}
+
+/****========Start相片浏览页面和首页页面的公共样式========****/
+.bottom{
+	height:auto;
+}
+
+.list{
+	float:left;
+	margin-bottom:10px;
+	border:1px solid #ebebeb;
+}
+.imgBox, .statusBar, .note{
+	width:200px;
+	padding:10px 12px;
+}
+.imgBox a img{
+	display:block;
+}
+.statusBar{
+	background-color:#EFFAED;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.details{
+	width:200px;
+	padding:0 12px;
+	height:21px;
+}
+.details{
+	padding-top:0;
+}
+li.photoDesc{
+	float:left !important;
+	margin-left:0 !important;
+}
+.collectBtn{
+	float:left;
+	margin-right:10px;
+	width:150px;
+}
+.collect{
+	display:block;
+	float:left;
+	border:1px solid #6B9F1F;
+	border-radius:5px 5px;
+	background-color:#6B9F1F;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+	cursor:pointer;
+	padding:3px 4px;
+	width:50px;
+}
+.collectNum{
+	display:block;
+	float:left;
+	margin-left:10px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:5px 5px;
+	padding:2px 0;
+	text-align:center;
+	width:30px;
+}
+.commentBtn{
+	float:right;
+}
+.commentTxt{
+	width:180px;
+	border:1px solid #ccc;
+	border-radius:4px 4px;
+	height:53px;
+	overflow:auto;
+	margin-top:5px;
+	padding:3px 5px;
+	font-size:12px;
+}
+.comment{
+	width:45px;
+	margin-top:10px;
+	margin-left:125px;
+	height:15px;
+	line-height:15px;
+}
+.note ul li{
+	float:left;
+	font-size:12px;
+	height:auto;
+}
+.ownerIco{
+	width:32px;
+	margin-right:10px;
+	display:inline;
+}
+.overF{
+	height:auto;
+	width:155px;
+	/*overflow:hidden;*/
+}
+.topImg{
+	margin:20px 0;
+}
+/****========End相片浏览页面和首页页面的公共样式========****/
+
+/****========Start相册列表和个人档案的部分公共样式========****/
+.selfInfor{
+	margin-bottom:20px;
+}
+.selfInfor a{
+	display:block;
+	float:left;
+}
+.selfInfor a img{
+	display:block;
+	width:48px;
+	height:48px;
+}
+.left{
+	float:left;
+	width:900px;
+	margin-left:10px;
+	margin-top:-5px;
+}
+#sonNav{
+	margin-top:8px;
+}
+#sonNav li{
+	float:left;
+	border-right:1px dotted #ccc;
+	padding:0 5px;
+}
+#sonNav li.last{
+	border-right:none;
+}
+.yourAlbum{
+	height:30px;
+	margin-bottom:0px;
+}
+
+/****========End相册列表和个人档案的部分公共样式========****/
+
+
+/****========Start登陆页面和注册页面的公共样式========****/
+.titleBar{
+	border:1px solid #ccc; 
+	border-top-left-radius:10px; 
+	border-top-right-radius:10px;
+	background-color:#eee; 
+	padding:6px 6px 10px 15px;
+	width:657px;
+	/*margin-left:20px;*/
+}
+.registToolbar{
+	background-color:#eee;
+	padding:10px;
+}
+td.name{
+	width:200px;
+	padding:5px 0 5px 5px;
+	text-align:right;
+	font-size:18px;
+	color:#000;
+	font-family:"宋体";
+}
+td em{
+	font-style:normal;
+	font-size:18px;
+	color:red;
+	display:inline-block;
+	margin-right:5px;
+}
+td input{
+	width:255px;
+	height:20px;
+	padding:5px;
+	border:1px solid #ccc;
+	border-radius:5px 5px;
+}
+input#VerificationCode{
+	width:128px;
+}
+.textDescription p{
+	font-size:12px;
+	color:#666;
+	padding-bottom:15px;
+}
+.regist{
+	width:90px;
+	margin:10px 0 10px 210px;
+}
+.autoLogin{
+	width:25px;
+	float:left;
+	border:none;
+	padding:0;
+}
+.autoLoginTxt{
+	width:90px;
+	float:left;
+	font-size:12px;
+	color:#666;
+}
+.fogot{
+	display:block;
+	float:left;
+}
+.btnLeft, .btnRight{
+	width:50px;
+	float:left;
+}
+.btnLeft{
+	margin-right:15px;
+	display:inline-block;
+}
+.btnArea{
+	padding:8px 0 8px 210px;
+}
+/****========End登陆页面和注册页面的公共样式========****/
+.albumNav{
+	border-bottom:1px solid #F3F3F3;
+	padding-bottom:10px;
+}
+
+td.checkCodeTd span{
+	display:block;
+	float:left;
+}
+td.checkCodeTd span.checkCodeImg{
+	margin-top:1px;
+	margin-left:10px;
+}
+
+/****======头像弹层======*****/
+.avatarTrigger{
+	border:2px solid #ccc;
+	width:63px;
+}
+.triggerLeft{
+	float:left;
+}
+a.triggerBtn, a.on{
+	display:block;
+	width:15px;
+	height:48px;
+	background:url(../images/ico.gif) no-repeat -30px 0;
+}
+a.triggerBtn:hover{
+	background:url(../images/ico.gif) no-repeat 0 0;
+}
+a.on{
+	background:url(../images/ico.gif) no-repeat -45px 0;
+}
+a.on:hover{
+	background:url(../images/ico.gif) no-repeat -15px 0;
+}
+.avatarMenu{
+	width:130px;
+	height:135px;
+	border:2px solid #ccc;
+	background-color:#eee;
+	display:none;
+}
+.avatar{
+	width:48px;
+	height:48px;
+	position:relative;
+	float:left;
+}
+
+ul.menu{
+	padding:5px;
+	width:120px;
+}
+ul.menu li{
+	margin:0 !important;
+	height:25px !important;
+}
+ul.menu li a{
+	display:block;
+	width:110px;
+	height:25px;
+	line-height:25px;
+	padding-left:10px;
+}
+ul.menu li a:hover{
+	background-color:#6BA025;
+	color:#fff;
+	text-decoration:none;
+}

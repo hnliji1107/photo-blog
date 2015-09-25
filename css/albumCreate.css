@@ -1,0 +1,8 @@
+label.albumTitle, label.description{
+	display:block;
+	float:left;
+}
+.create{
+	width:80px;
+	margin-left:40px;
+}

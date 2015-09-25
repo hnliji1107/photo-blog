@@ -1,0 +1,43 @@
+#nickName{
+	padding:10px 50px;
+	width:640px;
+}
+.newName{
+	width:150px;
+	padding:3px 5px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	background-color:#fff;
+	font-size:13px;
+	margin-bottom:10px;
+}
+p.txt{
+	color:#666;
+	margin:5px 0 10px 0;
+	font-size:12px;
+	font-family:'宋体';
+}
+.nickName{
+	width:90px;
+}
+#titleName{
+	margin-top:10px;
+}
+.editTip{
+	font-weight:normal;
+	color:#6B9F1F;
+}
+.textareaStyle{
+	width:300px;
+	height:100px;
+}
+.sexOpt{
+	margin:20px 0;
+}
+.sexOpt label{
+	margin-right:10px;
+}
+.newAvatar{
+	height:23px;
+	border:1px #ccc solid;
+}

@@ -1,0 +1,20 @@
+.accountLeft, .accountMiddle, .accountRight{
+	padding:5px 15px 5px 5px;
+	border-bottom:1px solid #eee;
+}
+.accountLeft{
+	width:150px;
+	text-align:right;
+}
+.accountMiddle{
+	width:649px;
+}
+.accountRight{
+	width:101px;
+}
+.accountLast{
+	border-bottom:none;
+}
+#titleName{
+	margin-top:10px;
+}

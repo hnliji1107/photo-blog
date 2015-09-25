@@ -1,0 +1,83 @@
+.albumBar{
+	margin:20px 0;
+}
+ul.albumNav li{
+	float:left;
+	margin-right:10px;
+	display:inline-block;
+	padding: 0 5px;
+	font-size:13px;
+	color:#cdcdcd;
+	font-family:'宋体', '微软雅黑';
+	height:23px;
+	line-height:23px;
+}
+ul.albumNav li a{
+	font-size:13px;
+	margin-top:-3px;
+}
+ul.albumNav li.atLast{
+	float:right;
+}
+a.share{
+	text-indent:-9999px;
+	display:block;
+	width:50px;
+	height:23px;
+	background:url(../images/photo_sprite_y.gif) no-repeat -480px 0;
+}
+a.share:hover{
+	background:url(../images/photo_sprite_y.gif) no-repeat -480px -23px;
+}
+.viewMethod{
+	color:#666;
+}
+.currentAlbum{
+	float:left;
+	display:block;
+	float:left;
+}
+.albumOwner{
+	padding-bottom:10px;
+}
+.albumOwner ul{
+	float:left;
+	padding-left:15px;
+	width:820px;
+}
+.albumOwner ul li{
+	float:left;
+}
+li.photoTitle{
+	width:350px;
+}
+li.viewBy, li.comments{
+	width:420px;
+}
+li.viewBy{
+	text-align:right;
+	margin-left:40px;
+	display:inline-block;
+}
+#wrapper h3{
+	font-size: 1.45em;
+    line-height: 1;
+    margin: 1em 0 0.5em;
+	color: #111111;
+    font-family: 微软雅黑,宋体,'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    font-weight: bold;
+}
+
+#wrapper h3 a{
+	font-size: 1.0em;
+}
+#titleName{
+	margin-top:10px;
+}
+#titleName a{
+	font-size:1em;
+	color:#6B9F1F;
+}
+#titleName strong{
+	margin:0 5px;
+}
